@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Riverstone Law Firm</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Riverstone Law Firm</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h2>Contact Us</h2>
+
+  <div class="card">
+    <form id="contactForm" onsubmit="return validateForm();">
+
+      <div class="form-control">
+        <input id="name" type="text" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-control">
+        <input id="email" type="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="form-control">
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  © 2025 Riverstone Law Firm — All Rights Reserved
+</footer>
+
+</body>
+</html>

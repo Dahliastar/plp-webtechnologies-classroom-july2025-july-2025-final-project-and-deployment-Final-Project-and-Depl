@@ -1,92 +1,158 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
-
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
-
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
-
----
 
 ## Live Page on GitHub Pages: https://dahliastar.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+Below is an **updated and complete README.md** that includes your **HTML, CSS, and JavaScript** files.
+This version explains the purpose of the JS validator and how it integrates with the contact form.
 
-Before you write any code, take time to plan:
-
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
-
-**Goal:** Show intentional structure and user journey across the site.
+If you want, I can also package this into a downloadable `.md` file.
 
 ---
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+# **Riverstone Law Firm Website**
 
-Using your plan, begin building:
-
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
-
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+A clean, fully responsive, multi-page website created for **Riverstone Law Firm**.
+The project includes a professional homepage, About page, Services page, and Contact page with a custom JavaScript form validator.
 
 ---
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+## 📌 **Overview**
 
-Before deployment, refactor your project to follow production-friendly practices:
+This website is designed to provide a strong professional presence for the Riverstone Law Firm.
+It includes a polished design, responsive layout, and a functional contact form with JavaScript validation.
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+**Key features:**
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
-
----
-
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
-
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
+* Responsive navigation bar across all pages
+* Professional hero section on the homepage
+* Overview of the firm's values
+* Individual pages for:
+  ✔ About the firm
+  ✔ List of services
+  ✔ Contact form
+* JavaScript-powered form validation
+* Clean and modern styling using CSS with media queries
 
 ---
 
-## Deliverables
+## 📁 **File Structure**
 
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+```
+project/
+│
+├── index.html          # Homepage
+├── about.html          # Firm history + mission
+├── services.html       # List of services offered
+├── contact.html        # Contact form + JS validation
+│
+├── styles/
+│   └── styles.css      # Visual styling + mobile responsiveness
+│
+└── scripts/
+    └── main.js         # Contact form validation logic
+```
 
 ---
 
-## Outcome
+## 🧱 **Technologies Used**
 
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+* **HTML5** — semantic page structure
+* **CSS3** — design, styling, responsive media queries
+* **JavaScript** — contact form validation
+
+---
+
+## 🏠 **Homepage Summary (`index.html`)**
+
+The homepage includes:
+
+### **Navigation Bar**
+
+Links to all main pages:
+
+* Home
+* About
+* Services
+* Contact
+
+### **Hero Section**
+
+A large banner featuring:
+
+* Main headline: *“Your Trusted Legal Partner”*
+* Supporting paragraph introducing the firm's values
+
+### **Main Content**
+
+Includes:
+
+* Welcome section
+* Short overview of firm experience
+* Card component with bullet points explaining why clients should choose the firm
+
+### **Footer**
+
+Uniform footer across all pages:
+
+```
+© 2025 Riverstone Law Firm — All Rights Reserved
+```
+
+---
+
+## 💬 **Contact Form Validation (main.js)**
+
+The **JavaScript file (`main.js`)** provides client-side validation for the contact form located on `contact.html`.
+
+### **Validation Features**
+
+✔ Shows error messages below each field
+✔ Highlights invalid fields with a red border
+✔ Checks for:
+
+* Empty name field
+* Proper email format
+* Message length (minimum 10 characters)
+
+✔ Clears errors when input is corrected
+✔ Displays a success alert when the form is valid
+✔ Prevents form submission for demo purposes (you can change this anytime)
+
+### **Key Functions**
+
+| Function                    | Purpose                                   |
+| --------------------------- | ----------------------------------------- |
+| `showError(input, message)` | Displays error text and highlights field  |
+| `clearError(input)`         | Removes error text and highlight          |
+| `isValidEmail(email)`       | Regex-based email validation              |
+| `validateForm()`            | Main function controlling all form checks |
+
+To enable validation, the **contact form** should include:
+
+```html
+<form id="contactForm" onsubmit="return validateForm()">
+```
+
+---
+
+## 📱 **Responsive Design**
+
+The stylesheet includes **tablet and mobile media queries**, ensuring that:
+
+* Navigation stacks vertically on mobile
+* Text and spacing adjust for small screens
+* Buttons and forms are easier to tap
+* Images scale properly across devices
+
+This ensures an excellent user experience on phones, tablets, and desktops.
+
+---
+
+## ▶️ **How to Run the Website**
+
+1. Download or clone the project.
+2. Maintain the folder structure (especially `/styles` and `/scripts`).
+3. Open **index.html** in a browser.
+4. Navigate using the menu.
+5. Test the contact form validation on `contact.html`.
+
+---

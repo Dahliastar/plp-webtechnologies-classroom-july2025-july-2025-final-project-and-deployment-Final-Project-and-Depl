@@ -6,6 +6,8 @@ This assignment will guide you from planning your site all the way to deploying 
 
 ---
 
+## Live Page on GitHub Pages: https://dahliastar.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/
+
 ## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
 
 Before you write any code, take time to plan:

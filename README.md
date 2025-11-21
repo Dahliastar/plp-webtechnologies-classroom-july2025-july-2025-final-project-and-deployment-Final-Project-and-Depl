@@ -1,11 +1,6 @@
 
 ## Live Page on GitHub Pages: https://dahliastar.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/
 
-Below is an **updated and complete README.md** that includes your **HTML, CSS, and JavaScript** files.
-This version explains the purpose of the JS validator and how it integrates with the contact form.
-
-If you want, I can also package this into a downloadable `.md` file.
-
 ---
 
 # **Riverstone Law Firm Website**

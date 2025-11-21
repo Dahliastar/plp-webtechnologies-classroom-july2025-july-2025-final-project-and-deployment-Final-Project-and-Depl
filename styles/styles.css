@@ -1,49 +1,49 @@
-/* -------- Global Styles -------- */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Segoe UI", sans-serif;
-  }
+}
   
-  body {
+body {
     background: #f7f7f7;
     color: #333;
-  }
+}
   
-  /* -------- Navigation -------- */
-  nav {
+/* Navigation */
+nav {
     background: #0c2340;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  nav .logo {
+nav .logo {
     color: #fff;
     font-size: 1.4rem;
     font-weight: bold;
-  }
+}
   
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-  }
+}
   
-  nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-  }
+}
   
-  nav ul li a:hover {
+nav ul li a:hover {
     text-decoration: underline;
-  }
+}
   
-  /* -------- Hero Section -------- */
-  .hero {
+/* Hero Section */
+.hero {
     background: url('https://images.unsplash.com/photo-1555374018-13a8994ab246')
       center/cover no-repeat;
     height: 60vh;
@@ -54,82 +54,167 @@
     text-shadow: 0 2px 6px rgba(0,0,0,0.5);
     text-align: center;
     padding: 20px;
-  }
+}
   
-  .hero h1 {
+.hero h1 {
     font-size: 3rem;
-  }
+}
   
-  .hero p {
+.hero p {
     font-size: 1.2rem;
     margin-top: 10px;
-  }
+}
   
-  /* Page Layout */
-  .container {
+/* Page Layout */
+.container {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
-  }
+}
   
-  h2 {
+h2 {
     margin-bottom: 15px;
     color: #0c2340;
-  }
+}
   
-  /* Cards */
-  .card {
+/* Cards */
+.card {
     background: #fff;
     padding: 20px;
     margin: 20px 0;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     border-radius: 6px;
-  }
+}
   
-  /* Contact Form */
-  form input, form textarea {
+/* Contact Form */
+form input, form textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
+}
   
-  button {
+button {
     background: #0c2340;
     color: #fff;
     padding: 12px 18px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
   
-  button:hover {
+button:hover {
     background: #153a6d;
-  }
-
-  /*Footer*/
-  footer {
+}
+  
+/* Footer */
+footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
     background: #0c2340;
     color: #fff;
-  }
-
+}
 
 /* Error Styling */
-  .error {
+.error {
     border: 1px solid #e63946;
-  }
+}
   
-  .error-msg {
+.error-msg {
     color: #e63946;
     font-size: 0.85rem;
     margin-top: 4px;
     display: block;
-  }
-  .form-control {
+}
+.form-control {
     margin-bottom: 15px;
-  }
+}
+
+
+/* RESPONSIVE DESIGN */
+/* Tablets and small laptops */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+
+    /* Stack nav items */
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav .logo {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hero section adjustments */
+    .hero {
+        height: auto;
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .container h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .card ul {
+        font-size: 0.95rem;
+    }
+
+    button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
   
